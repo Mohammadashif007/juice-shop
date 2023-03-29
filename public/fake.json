@@ -1,0 +1,44 @@
+[
+    {
+      "id": "64241d02af1d23578677af1e",
+      "price": "$3",
+      "picture": "https://media.istockphoto.com/id/1227301369/photo/whole-cross-section-and-quarter-of-fresh-organic-navel-orange-with-leaves-in-perfect-shape-on.jpg?b=1&s=170667a&w=0&k=20&c=uimgulwrNTf72rAbIOdLvObEgsJSZoCqWm9Qxojjl7Q=",
+      "name": "Orange"
+    },
+    {
+      "id": "64241d02a29aa2801ea045c3",
+      "price": "$2",
+      "picture": "https://media.istockphoto.com/id/1321448019/photo/ripe-juicy-watermelon-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=jeHDIwKywoDuZuF-3naj6tA_sfYfIlncg8iCepYGoJ8=",
+      "name": "Watermelon"
+    },
+    {
+      "id": "64241d025be423990dd8b3a4",
+      "price": "$1",
+      "picture": "https://media.istockphoto.com/id/1295773461/photo/purple-grape-isolated-on-white-background-clipping-path-full-depth-of-field.jpg?b=1&s=170667a&w=0&k=20&c=KcWHGIRSEHixngCbujWX2RIcCf3D1jl5g2vAYOnEC70=",
+      "name": "Grape"
+    },
+    {
+      "id": "64241d021fb1a03221f8a4d7",
+      "price": "$3",
+      "picture": "https://thumbs.dreamstime.com/b/sliced-banana-isolated-white-background-58835288.jpg",
+      "name": "Strawberry"
+    },
+    {
+      "id": "64241d028cf4a7d8edd57d5f",
+      "price": "$2",
+      "picture": "https://media.istockphoto.com/id/1317775279/photo/strawberries-isolated-strawberry-slice-and-whole-berry-isolate-two-strawberries-on-white-side.jpg?b=1&s=170667a&w=0&k=20&c=MOhtYXmFx2UGTSHmsaVEeUzNfc8dWeYCugaLrwoFJsU=",
+      "name": "Blackberry"
+    },
+    {
+      "id": "64241d029a9cac4fa4c6463f",
+      "price": "$2",
+      "picture": "https://t4.ftcdn.net/jpg/00/61/49/85/360_F_61498544_OwSXV9wZBI4EJI4M6596ZikUN20YXzVm.jpg",
+      "name": "Apple"
+    },
+    {
+      "id": "64241d026eb6a954b712fb9c",
+      "price": "$2",
+      "picture": "https://img.freepik.com/premium-photo/fresh-red-apple-fruit-with-sliced-green-leaves-isolated-white-background_252965-9.jpg",
+      "name": "Banana"
+    }
+  ]

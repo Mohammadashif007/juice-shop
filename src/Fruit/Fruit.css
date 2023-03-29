@@ -1,0 +1,21 @@
+.fruit-container {
+    /* border: 1px solid gray; */
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.fruit-container img {
+    width: 100%;
+}
+.add-btn {
+    background-color: orange;
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 8px;
+    /* position: absolute; */
+    bottom: 0;
+    right: 100px;
+}
