@@ -42,10 +42,15 @@ function App() {
       setRandom(item);
     }
 
+    const handleClear = () => {
+     
+    }
+
     return (
         <div className="fruits-shop">
             <h1>All Items</h1>
             <button className="random-btn" onClick={() => getRandomItem()}>Random</button>
+            <button className="random-btn" onClick={() => handleClear()}>Clear All</button>
             <div className="fruits-container">
                 {fruits.map((fruit) => (
                     <Fruit

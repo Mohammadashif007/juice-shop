@@ -3,11 +3,10 @@ import "./Cart.css";
 import "../App.css";
 
 const Cart = ({ cart, setCart, random }) => {
-    // console.log(random);
-    // const {name, picture, price} = random;
 
     const handleRemove = (item) => {
-        // console.log(item);
+        const arr = cart.filter(product => item.id !== product.id);
+        setCart(arr);
         
     }
 
