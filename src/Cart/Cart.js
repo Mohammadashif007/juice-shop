@@ -3,7 +3,8 @@ import "./Cart.css";
 import "../App.css";
 
 const Cart = ({ cart, setCart, random }) => {
-    console.log(random);
+    // console.log(random);
+    // const {name, picture, price} = random;
 
     const handleRemove = (item) => {
         // console.log(item);
@@ -12,7 +13,11 @@ const Cart = ({ cart, setCart, random }) => {
 
     return (
         <div>
-            {random.name?<h2>{random.name}</h2>:cart.map((item) => (
+            {random.name && random.picture && random.price?<div className="random-item">
+                <img src={random.picture} alt="" />
+                <h3>{random.name}</h3>
+                <h3>{random.price}</h3>
+            </div>:cart.map((item) => (
                 <div key={item.id} className="cart-item">
                     <div className="img-name">
                         <img src={item.picture} alt="" />
