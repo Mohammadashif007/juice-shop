@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 50px;
+  padding: 30px;
 }
 .name-color {
   color: orange;
