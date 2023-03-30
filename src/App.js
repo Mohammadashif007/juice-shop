@@ -7,6 +7,7 @@ import Cart from "./Cart/Cart";
 function App() {
     const [fruits, setFruits] = useState([]);
     const [cart, setCart] = useState([]);
+    const [warning, setWarning] = useState(false);
 
     useEffect(() => {
         fetch("fake.json")
@@ -16,18 +17,22 @@ function App() {
 
     const addToCart = (fruit) => {
         let isPresent = false;
-        cart.forEach(item => {
-          if(item.id === fruit.id){
-            isPresent = true
-          }
-        })
-        if(isPresent){
-          return;
+        cart.forEach((item) => {
+            if (item.id === fruit.id) {
+                isPresent = true;
+            }
+        });
+        if (isPresent) {
+          setWarning(true);
+            setTimeout(() => {
+              setWarning(false);
+            }, 2000)
+            return;
+        } else {
+            const newCart = [...cart, fruit];
+            setCart(newCart);
         }
-        else {
-          const newCart = [...cart, fruit];
-          setCart(newCart);
-        }
+
     };
 
     return (
@@ -45,6 +50,9 @@ function App() {
             <div>
                 <Cart cart={cart} setCart={setCart}></Cart>
             </div>
+            {
+              warning && <div className="warning">Item already added to your cart</div>
+            }
         </div>
     );
 }
