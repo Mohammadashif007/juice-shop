@@ -8,6 +8,7 @@ function App() {
     const [fruits, setFruits] = useState([]);
     const [cart, setCart] = useState([]);
     const [warning, setWarning] = useState(false);
+    const [random, setRandom] = useState([]);
 
     useEffect(() => {
         fetch("fake.json")
@@ -35,9 +36,16 @@ function App() {
 
     };
 
+    const getRandomItem = () => {
+      const arr = Math.floor(Math.random()*cart.length);
+      const item = cart[arr];
+      setRandom(item);
+    }
+
     return (
         <div className="fruits-shop">
             <h1>All Items</h1>
+            <button className="random-btn" onClick={() => getRandomItem()}>Random</button>
             <div className="fruits-container">
                 {fruits.map((fruit) => (
                     <Fruit
@@ -48,10 +56,10 @@ function App() {
                 ))}
             </div>
             <div>
-                <Cart cart={cart} setCart={setCart}></Cart>
+                <Cart cart={cart} setCart={setCart} random = {random}></Cart>
             </div>
             {
-              warning && <div className="warning">Item already added to your cart</div>
+              warning && <div className="warning">Item already added on your cart</div>
             }
         </div>
     );

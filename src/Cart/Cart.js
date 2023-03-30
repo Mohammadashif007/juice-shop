@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./Cart.css";
+import "../App.css";
 
-const Cart = ({ cart, setCart }) => {
-    // console.log(cart);
+const Cart = ({ cart, setCart, random }) => {
+    console.log(random);
 
     const handleRemove = (item) => {
-        console.log(item);
+        // console.log(item);
+        
     }
 
     return (
         <div>
-            {cart.map((item) => (
+            {random.name?<h2>{random.name}</h2>:cart.map((item) => (
                 <div key={item.id} className="cart-item">
                     <div className="img-name">
                         <img src={item.picture} alt="" />
@@ -19,7 +21,7 @@ const Cart = ({ cart, setCart }) => {
                     <div>
                         <h4>{item.price}</h4>
                     </div>
-                    <button onClick={() => handleRemove(item)}>Remove</button>
+                    <button onClick={() => handleRemove(item)} className="random-btn">Remove</button>
                 </div>
             ))}
         </div>

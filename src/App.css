@@ -22,3 +22,12 @@
   top: 50%;
   right: 0;
 }
+.random-btn {
+  background-color: #379237;
+  color: whitesmoke;
+  font-size: 20px;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}
